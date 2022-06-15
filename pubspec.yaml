@@ -41,6 +41,8 @@ dependencies:
   firebase_auth: 
   image_picker: 
   firebase_storage: ^10.2.16
+  firebase_messaging: ^11.4.1
+  
 
 
 dev_dependencies:

@@ -80,6 +80,9 @@ class _AuthFormState extends State<AuthForm> {
                   TextFormField(
                     key: const ValueKey('email'),
                     keyboardType: TextInputType.emailAddress,
+                    autocorrect: false,
+                    textCapitalization: TextCapitalization.none,
+                    enableSuggestions: false,
                     decoration: const InputDecoration(
                       labelText: 'Email Address',
                       errorStyle: TextStyle(
@@ -101,6 +104,7 @@ class _AuthFormState extends State<AuthForm> {
                   if (!_isLogin)
                     TextFormField(
                       key: const ValueKey('username'),
+                      textCapitalization: TextCapitalization.words,
                       decoration: const InputDecoration(
                         labelText: 'Username',
                         errorStyle: TextStyle(

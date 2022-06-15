@@ -44,6 +44,9 @@ class _NewMessageState extends State<NewMessage> {
                 padding: const EdgeInsets.all(8.0),
                 child: TextField(
                   key: const ValueKey('message'),
+                  autocorrect: true,
+                  textCapitalization: TextCapitalization.sentences,
+                  enableSuggestions: true,
                   decoration: const InputDecoration(
                     label: Text('Send new message...'),
                     border: InputBorder.none,
